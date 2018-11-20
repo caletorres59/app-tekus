@@ -1,0 +1,107 @@
+
+
+<div class="container-fluid contenet">
+
+  <div class="contentProducts">
+    <div *ngIf="showList">
+      <div class="products" *ngFor="let product of products">
+        <div (click)= "showSingleProduct(product)">
+            <div class="itemProduct">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="{{product.image}}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">{{product.name}} <span class="icon-hand"><i class="far fa-thumbs-up"></i></span></h5>
+                    <span class="btn">${{product.price}}</span>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+      
+      </div>
+  </div>
+  <div class="content-list-steps">
+    <div *ngIf="showProduct">
+ 
+      <div class="item"> <p>{{stepActual.name}}</p>
+      <div class="line-sub"></div>
+      </div> 
+    <div class="content-steps" >
+  
+        <ul *ngFor="let item of stepActual.items" class="list-steps">
+            
+            <li (click)="showItems(item)" ><span>{{item.name}}</span>
+                <img src="{{item.image}}" alt="">
+            </li>
+           
+          </ul>
+    </div>
+    
+   
+  </div>
+  <div class="show-confirm" *ngIf="showConfirm">
+
+    <div class="buttons">
+      
+        <button (click)="openProducts()" class="btn btn-primary">Continuar con el pedido</button>
+        <button class="btn btn-success" (click)="totalOrder()">Finalizar Compra</button>
+    </div>
+      
+    
+    </div>
+    <div class="order-all" *ngIf="showOrderTotal">
+      <div class="all" *ngFor="let all of listTodo">
+        <h5>{{all.producto}}</h5>
+        <div class="items" *ngFor="let i of all.items">
+            {{i.name}}
+        </div>
+       
+        
+      </div>
+      <span class="total-order">Total del pedido: {{total}}</span>
+    </div>
+  </div>
+
+  </div>
+  <div class="order-products">
+    <img src="{{imageOrder}}" alt="">
+    <h1 class="title-order">Order</h1>
+    <div class="order-details">
+      <div class="product-selected" *ngFor="let pr of productsSelect">
+          {{pr.name}} ${{pr.price}}
+         
+      </div>
+      <h2 *ngIf="showListItems">Tu pedido</h2>
+      <ul *ngFor="let itemss of itemSelect">
+       
+          {{itemss.name}}
+        </ul>
+       <h3>Total Order: $ {{total}} </h3>   
+        </div>
+    </div>
+    <div class="buttons-controls">
+
+    </div>
+    
+
+</div>
+
+
+
+ 
+
+
+  
+
+ 
+        
+
+        
+
+ 
+ 
+
+ 
+

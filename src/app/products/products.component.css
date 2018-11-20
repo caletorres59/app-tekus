@@ -1,0 +1,46 @@
+.container-fluid.contenet{width: 100%; display: flex; height: 100%;}
+
+/*Content Products*/
+.container-fluid.contenet .contentProducts{width: 70%;height: auto;}
+.contentProducts > div{width: 100%;
+    display: flex;
+    flex-wrap: wrap;justify-content: space-around;}
+.products{width: 32%;margin: 4px; position: relative;}
+span.btn{position: absolute;top:0;left: 0; background-color: rgba(225, 138, 67,0.7); color: #fff; font-weight: 700;letter-spacing: 1px;}
+.card{width: 14rem !important; background-color:rgb(116, 58, 44,0.8); cursor: pointer; }
+.card-title{width: 100%;
+    display: flex;
+    justify-content: space-between; color: #ffffff;}
+
+
+
+/*Order Products*/
+.order-products{width: 30%; height: 60%; background-color:rgba(116, 58, 44,0.8);}
+.order-products img{width: 100%; padding: 8%;}
+h1.title-order{color: #ffffff; background-color:#2C1A0C; text-align: center; }
+.order-details{width: 100%; color: #2C1A0C; height: 55%; background-color: #ffff; position: relative;}
+.order-details h3{bottom: 0px;
+    position: absolute; padding-left: 1%;}
+
+/*Steps Styles*/
+.content-list-steps > div{width: 100%;}
+.content-list-steps .item {color:#ffff; font-size: 3rem;}
+.content-list-steps .item p{margin: 0;}
+.line-sub { width: 10%; display: block; border:3px solid #fff; border-radius:5px ; -webkit-border-radius:5px ; -moz-border-radius:5px ; -ms-border-radius:5px ; -o-border-radius:5px ; }
+.content-steps{display:flex; flex-wrap: wrap;margin: 5% 0;}
+.content-steps ul{ width: 47%; list-style: none; background-color:beige;; margin: 10px; color: #fff; border-radius:15px 0 15px 0 ; -webkit-border-radius:15px 0 15px 0 ; -moz-border-radius:15px 0 15px 0 ; -ms-border-radius:15px 0 15px 0 ; -o-border-radius:15px 0 15px 0 ; cursor: pointer;}
+.content-steps ul li{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.content-steps ul li span{font-size: 2.5rem; color:#2C1A0C; font-weight: 700; width: 100%; text-align: center;}
+
+.buttons{width: 100%; height: 900px;display: flex; justify-content: space-around;align-items: center;}
+.buttons button { width: 300px;height:300px;margin: 10px; background-color: rgba(116, 58, 44,0.8);font-size: 2rem; }
+
+/*Order All*/
+.order-all{width: 60%;
+    padding: 3%;
+    background: white;
+    display: flex; justify-content: space-around; margin:20px;}
+.order-all .items{border-bottom: 1px solid beige;}
